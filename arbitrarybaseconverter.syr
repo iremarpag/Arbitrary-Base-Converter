@@ -1,0 +1,497 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: arbitrarybaseconverter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "arbitrarybaseconverter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "arbitrarybaseconverter"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-vq100
+
+---- Source Options
+Top Module Name                    : arbitrarybaseconverter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/arbitrarybaseconverter/arbitrarybaseconverter.vhd" in Library work.
+Entity <arbitrarybaseconverter> compiled.
+Entity <arbitrarybaseconverter> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <arbitrarybaseconverter> in library <work> (architecture <behavioral>) with generics.
+	X = 50000000
+	Y = 65536
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <arbitrarybaseconverter> in library <work> (Architecture <behavioral>).
+	X = 50000000
+	Y = 65536
+WARNING:Xst:795 - "C:/Xilinx/arbitrarybaseconverter/arbitrarybaseconverter.vhd" line 53: Size of operands are different : result is <false>.
+WARNING:Xst:795 - "C:/Xilinx/arbitrarybaseconverter/arbitrarybaseconverter.vhd" line 142: Size of operands are different : result is <false>.
+Entity <arbitrarybaseconverter> analyzed. Unit <arbitrarybaseconverter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <arbitrarybaseconverter>.
+    Related source file is "C:/Xilinx/arbitrarybaseconverter/arbitrarybaseconverter.vhd".
+    Found 7-bit register for signal <SevSeg>.
+    Found 8-bit register for signal <Digits>.
+    Found 17-bit adder for signal <$add0000> created at line 37.
+    Found 17-bit up counter for signal <Counter>.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0000> created at line 70.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0001> created at line 70.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0002> created at line 70.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0003> created at line 70.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0004> created at line 70.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0005> created at line 70.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0006> created at line 75.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0007> created at line 75.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0008> created at line 75.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0009> created at line 75.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0010> created at line 75.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0011> created at line 75.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0012> created at line 76.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0013> created at line 76.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0014> created at line 76.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0015> created at line 76.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0016> created at line 77.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0017> created at line 77.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0018> created at line 77.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0019> created at line 81.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0020> created at line 82.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0021> created at line 82.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0022> created at line 83.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0023> created at line 83.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0024> created at line 83.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0025> created at line 84.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0026> created at line 84.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0027> created at line 89.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0028> created at line 89.
+    Found 6-bit comparator greatequal for signal <SevSeg$cmp_ge0029> created at line 99.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0000> created at line 104.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0001> created at line 104.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0002> created at line 105.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0003> created at line 110.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0004> created at line 110.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0005> created at line 115.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0006> created at line 122.
+    Found 6-bit comparator greater for signal <SevSeg$cmp_gt0007> created at line 122.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0000> created at line 70.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0001> created at line 70.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0002> created at line 70.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0003> created at line 70.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0004> created at line 70.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0005> created at line 70.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0006> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0007> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0008> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0009> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0010> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0011> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0012> created at line 75.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0013> created at line 76.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0014> created at line 76.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0015> created at line 76.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0016> created at line 76.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0017> created at line 77.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0018> created at line 77.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0019> created at line 77.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0020> created at line 81.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0021> created at line 81.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0022> created at line 82.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0023> created at line 83.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0024> created at line 83.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0025> created at line 84.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0026> created at line 84.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0027> created at line 84.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0028> created at line 90.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0029> created at line 92.
+    Found 6-bit comparator lessequal for signal <SevSeg$cmp_le0030> created at line 92.
+    Found 6-bit comparator less for signal <SevSeg$cmp_lt0000> created at line 99.
+    Found 6-bit comparator less for signal <SevSeg$cmp_lt0001> created at line 99.
+    Found 6-bit comparator less for signal <SevSeg$cmp_lt0002> created at line 100.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  72 Comparator(s).
+Unit <arbitrarybaseconverter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 17-bit adder                                          : 1
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Registers                                            : 2
+ 7-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 72
+ 6-bit comparator greatequal                           : 30
+ 6-bit comparator greater                              : 8
+ 6-bit comparator less                                 : 3
+ 6-bit comparator lessequal                            : 31
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Counters                                             : 1
+ 17-bit up counter                                     : 1
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+# Comparators                                          : 72
+ 6-bit comparator greatequal                           : 30
+ 6-bit comparator greater                              : 8
+ 6-bit comparator less                                 : 3
+ 6-bit comparator lessequal                            : 31
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Counter_16> of sequential type is unconnected in block <arbitrarybaseconverter>.
+
+Optimizing unit <arbitrarybaseconverter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block arbitrarybaseconverter, actual ratio is 33.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : arbitrarybaseconverter.ngr
+Top Level Output File Name         : arbitrarybaseconverter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 569
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 30
+#      LUT2                        : 38
+#      LUT2_D                      : 8
+#      LUT2_L                      : 1
+#      LUT3                        : 62
+#      LUT3_D                      : 4
+#      LUT3_L                      : 2
+#      LUT4                        : 280
+#      LUT4_D                      : 16
+#      LUT4_L                      : 17
+#      MUXCY                       : 42
+#      MUXF5                       : 31
+#      MUXF6                       : 1
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 31
+#      FD                          : 21
+#      FDE                         : 8
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 10
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50avq100-5 
+
+ Number of Slices:                      251  out of    704    35%  
+ Number of Slice Flip Flops:             31  out of   1408     2%  
+ Number of 4 input LUTs:                460  out of   1408    32%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of     68    38%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLOCK                              | BUFGP                  | 31    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.216ns (Maximum Frequency: 97.884MHz)
+   Minimum input arrival time before clock: 12.852ns
+   Maximum output required time after clock: 5.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK'
+  Clock period: 10.216ns (frequency: 97.884MHz)
+  Total number of paths / destination ports: 11293 / 41
+-------------------------------------------------------------------------
+Delay:               10.216ns (Levels of Logic = 20)
+  Source:            Counter_1 (FF)
+  Destination:       SevSeg_6 (FF)
+  Source Clock:      CLOCK rising
+  Destination Clock: CLOCK rising
+
+  Data Path: Counter_1 to SevSeg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.495   0.488  Counter_1 (Counter_1)
+     LUT1:I0->O            1   0.561   0.000  Madd__add0000_Madd_cy<1>_rt (Madd__add0000_Madd_cy<1>_rt)
+     MUXCY:S->O            1   0.523   0.000  Madd__add0000_Madd_cy<1> (Madd__add0000_Madd_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<2> (Madd__add0000_Madd_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<3> (Madd__add0000_Madd_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<4> (Madd__add0000_Madd_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<5> (Madd__add0000_Madd_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<6> (Madd__add0000_Madd_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<7> (Madd__add0000_Madd_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<8> (Madd__add0000_Madd_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<9> (Madd__add0000_Madd_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<10> (Madd__add0000_Madd_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<11> (Madd__add0000_Madd_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Madd__add0000_Madd_cy<12> (Madd__add0000_Madd_cy<12>)
+     XORCY:CI->O          47   0.654   1.143  Madd__add0000_Madd_xor<13> (_add0000<13>)
+     LUT2_D:I1->O          4   0.562   0.501  Digits_mux0000<2>111_SW2 (N391)
+     LUT4:I3->O            3   0.561   0.474  SevSeg_mux0008<5>121 (N9)
+     LUT4:I2->O            1   0.561   0.359  SevSeg_mux0008<0>142 (SevSeg_mux0008<0>142)
+     LUT4:I3->O            1   0.561   0.380  SevSeg_mux0008<4>11161_SW0_SW0 (N54)
+     LUT4_D:I2->O          1   0.561   0.359  SevSeg_mux0008<0>193 (N01)
+     LUT4:I3->O            1   0.561   0.000  SevSeg_mux0008<0>2 (SevSeg_mux0008<0>)
+     FD:D                      0.197          SevSeg_6
+    ----------------------------------------
+    Total                     10.216ns (6.512ns logic, 3.704ns route)
+                                       (63.7% logic, 36.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK'
+  Total number of paths / destination ports: 6859 / 9
+-------------------------------------------------------------------------
+Offset:              12.852ns (Levels of Logic = 12)
+  Source:            N<4> (PAD)
+  Destination:       SevSeg_6 (FF)
+  Destination Clock: CLOCK rising
+
+  Data Path: N<4> to SevSeg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            87   0.824   1.196  N_4_IBUF (N_4_IBUF)
+     LUT2:I0->O           11   0.561   0.901  SevSeg_or003021 (SevSeg_or003021)
+     LUT4:I0->O            4   0.561   0.607  SevSeg_cmp_eq00081 (SevSeg_cmp_eq0008)
+     LUT3:I0->O            1   0.561   0.359  SevSeg_or00113 (SevSeg_or00113)
+     LUT4:I3->O            2   0.561   0.382  SevSeg_or00119 (SevSeg_or00119)
+     LUT4:I3->O            1   0.561   0.359  SevSeg_mux0008<4>11109_SW0 (N262)
+     LUT4:I3->O            1   0.561   0.465  SevSeg_mux0008<4>11109 (SevSeg_mux0008<4>11109)
+     LUT4:I0->O            1   0.561   0.359  SevSeg_mux0008<4>11138_SW0 (N206)
+     LUT4_D:I3->LO         1   0.561   0.208  SevSeg_mux0008<4>11138 (N3511)
+     LUT4:I0->O            1   0.561   0.465  SevSeg_mux0008<4>11161_SW0_SW1 (N68)
+     LUT4_D:I0->O          1   0.561   0.359  SevSeg_mux0008<0>193 (N01)
+     LUT4:I3->O            1   0.561   0.000  SevSeg_mux0008<0>2 (SevSeg_mux0008<0>)
+     FD:D                      0.197          SevSeg_6
+    ----------------------------------------
+    Total                     12.852ns (7.192ns logic, 5.660ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              5.271ns (Levels of Logic = 1)
+  Source:            SevSeg_6 (FF)
+  Destination:       SevSeg<6> (PAD)
+  Source Clock:      CLOCK rising
+
+  Data Path: SevSeg_6 to SevSeg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.495   0.380  SevSeg_6 (SevSeg_6)
+     OBUF:I->O                 4.396          SevSeg_6_OBUF (SevSeg<6>)
+    ----------------------------------------
+    Total                      5.271ns (4.891ns logic, 0.380ns route)
+                                       (92.8% logic, 7.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.52 secs
+ 
+--> 
+
+Total memory usage is 4520792 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
