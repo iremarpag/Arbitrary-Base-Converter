@@ -1,0 +1,31 @@
+NET "CLOCK" LOC = "P40";
+
+NET "Digits<0>"  LOC = "P50"  ;
+NET "Digits<1>"  LOC = "P49"  ;
+NET "Digits<2>"  LOC = "P52"  ;
+NET "Digits<3>"  LOC = "P56"  ;
+NET "Digits<4>"  LOC = "P59"  ;
+NET "Digits<5>"  LOC = "P57"  ;
+NET "Digits<6>"  LOC = "P60"  ;
+NET "Digits<7>"  LOC = "P61"  ;
+
+NET "SevSeg<0>"  LOC = "P64"  ; # G
+NET "SevSeg<1>"  LOC = "P98"  ; # F
+NET "SevSeg<2>"  LOC = "P73"  ; # E
+NET "SevSeg<3>"  LOC = "P72"  ; # D
+NET "SevSeg<4>"  LOC = "P65"  ; # C
+NET "SevSeg<5>"  LOC = "P62"  ; # B
+NET "SevSeg<6>"  LOC = "P71"  ; # A
+
+NET "B<1>"  LOC = "P78"  ;
+NET "B<0>"  LOC = "P82"  ;
+
+NET "A<1>"  LOC = "P85"  ;
+NET "A<0>"  LOC = "P88"  ;
+
+NET "N<5>"  LOC = "P90"  ;
+NET "N<4>"  LOC = "P94"  ;
+NET "N<3>"  LOC = "P4"  ;
+NET "N<2>"  LOC = "P5"  ;
+NET "N<1>"  LOC = "P12"  ;
+NET "N<0>"  LOC = "P15"  ;

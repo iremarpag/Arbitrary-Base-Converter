@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\arbitrarybaseconverter\arbitrarybaseconverter.ncd
+OUTFILE=C:\Xilinx\arbitrarybaseconverter\arbitrarybaseconverter.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s50a-5vq100
+WORKINGDIR=C:\Xilinx\arbitrarybaseconverter
+LICENSE=WebPack
+USER_INFO=211601023_0_0_271
